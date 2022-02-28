@@ -1,0 +1,21 @@
+x=[1,2,3,2,1,3,2,1,2,2]
+l=[]
+ans=[]
+o=[]
+for i in x:
+    if i not in l: 
+        l.append(i)
+        y=x.count(i)
+        ans.append(y)
+        if y%2!=0 or y%2==1:
+            o.append(i)
+print(x)            
+print('list elements without repeating:',l)        
+print('no.of times list elements occur:',ans)
+print('odd occurence:',o)
+'''
+output:
+[1, 2, 3, 2, 1, 3, 2, 1, 2, 2]
+list elements without repeating: [1, 2, 3]
+no.of times list elements occur: [3, 5, 2]
+odd occurence: [1, 2]'''
